@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criptografia Challenge</title>
+    <!-- estilo -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="fonts/css/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPTS -->
+    <script type="module" src="scripts/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><i class="icon-user-secret"></i></h1>
+    </header>
+    <main>
+      <!-- copy -->
+      <section class="decodificador">
+        <h3 class="caixatexto">Digite seu texto</h2>
+        <div class="decodificador_text">
+          <label for="user_text"></label>
+          <textarea
+            name="user_text"
+            id="user_text"
+            cols=""
+            rows=""
+            autofocus
+          ></textarea>
+
+        <div class="decodificador_buttons">
+          <div>
+            <i class="icon-warning"> Apenas letras minúsculas e sem acento.</i>
+          </div>
+          <div>
+            <button class="btn encrypt">Criptografar</button>
+            <button class="btn decrypt">Descriptografar</button>
+          </div>
+        </div>
+      </section>
+      <section class="display">
+        <div class="display_searching active">
+          <img src="fonts/images/procurando.png" alt="Procurando..." />
+          <div class="display_searching_text">
+            <h3>Nenhuma mensagem encontrada</h3>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
+        </div>
+
+        <div class="display_result">
+          <textarea
+            name="display_result_text"
+            id="display_result_text"
+            cols=""
+            rows=""
+            disabled
+          ></textarea>
+          <div class="display_result_buttons">
+            <div class="alert_card">
+              <p></p>
+              <span class="alert_card_bar"></span>
+            </div>
+            <button class="btn copy">Copiar</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- copy -->
+    </main>
+    <footer>
+      <div>
+        <h3>
+          © 2022 Copyright:
+          <a href="https://www.linkedin.com/in/oleonardopinheiro/" target="_blank"
+            >Leonardo Pinheiro</a
+          >
+        </h3>
+      </div>
+    </footer>
+  </body>
+</html>
